@@ -22,6 +22,12 @@
       <div class="container content">
         {{ content }}
       </div>
+
+      <div class="container content"> 
+        {% include comments.html %}
+      </div>
+
+      {% include google_analytics.html %}
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>

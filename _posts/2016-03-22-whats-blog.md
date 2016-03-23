@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What's a blog?
+comments: true
 ---
 
 > "I think we'll always look back at our writing and think it was bad, because it's a pretty much a reflection of our thoughts, which get more complex with experience" - Jeffrey Terry
