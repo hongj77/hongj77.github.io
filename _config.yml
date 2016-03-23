@@ -5,9 +5,9 @@ permalink:           pretty
 
 # Setup
 title:               Hong Jeon
-tagline:             'Short Blogs'
+tagline:             "Short Blogs"
 description:         "Cornell University \'17 <br> Norman High School \'13"
-url:                 
+url:                 ""
 baseurl:             ""
 paginate:            5
 
