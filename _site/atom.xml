@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Hong Jeon</title>
- <link href="http://lanyon.getpoole.com/bloggity/atom.xml" rel="self"/>
- <link href="http://lanyon.getpoole.com/bloggity/"/>
- <updated>2016-03-22T23:45:33-04:00</updated>
- <id>http://lanyon.getpoole.com</id>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2016-03-23T00:04:20-04:00</updated>
+ <id></id>
  <author>
-   <name>Mark Otto</name>
-   <email>markdotto@gmail.com</email>
+   <name></name>
+   <email></email>
  </author>
 
  
  <entry>
    <title>What's a blog?</title>
-   <link href="http://lanyon.getpoole.com/2016/03/22/whats-a-blog/"/>
+   <link href="/2016/03/22/whats-a-blog/"/>
    <updated>2016-03-22T00:00:00-04:00</updated>
-   <id>http://lanyon.getpoole.com/bloggity/2016/03/22/whats-a-blog</id>
+   <id>/2016/03/22/whats-a-blog</id>
    <content type="html">&lt;blockquote&gt;
   &lt;p&gt;“I think we’ll always look back at our writing and think it was bad, because it’s a pretty much a reflection of our thoughts, which get more complex with experience” - Jeffrey Terry&lt;/p&gt;
 &lt;/blockquote&gt;
