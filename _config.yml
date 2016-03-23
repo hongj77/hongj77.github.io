@@ -1,7 +1,7 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink: '/:title'
+permalink: ':title'
 # relative_permalinks: true
 
 # Setup
@@ -9,7 +9,7 @@ title:               Hong Jeon
 tagline:             'Short Blogs'
 description:         "Cornell University \'17 <br> Norman High School \'13"
 url:                 http://hongjeon.com
-baseurl:             
+baseurl:             ""
 paginate:            5
 
 # About/contact
