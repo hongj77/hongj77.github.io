@@ -7,20 +7,20 @@ permalink:           pretty
 title:               Hong Jeon
 tagline:             'Short Blogs'
 description:         "Cornell University \'17 <br> Norman High School \'13"
-url:                 http://lanyon.getpoole.com
-baseurl:             "/bloggity"
+url:                 
+baseurl:             
 paginate:            5
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              
+  url:               
+  email:             
 
 # Custom vars
 version:             1.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/hongj77/hongj77.github.io
 
 
 gems:
