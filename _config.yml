@@ -8,7 +8,7 @@ title:               Hong Jeon
 tagline:             'Short Blogs'
 description:         "Cornell University \'17 <br> Norman High School \'13"
 url:                 
-baseurl:             
+baseurl:             ""
 paginate:            5
 
 # About/contact
