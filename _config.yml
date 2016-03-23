@@ -1,26 +1,27 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+permalink: '/:title'
+# relative_permalinks: true
 
 # Setup
 title:               Hong Jeon
-tagline:             "Short Blogs"
+tagline:             'Short Blogs'
 description:         "Cornell University \'17 <br> Norman High School \'13"
-url:                 ""
-baseurl:             ""
+url:                 http://hongjeon.com
+baseurl:             
 paginate:            5
 
 # About/contact
 author:
-  name:              
-  url:               
-  email:             
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
 # Custom vars
 version:             1.0.0
 github:
-  repo:              https://github.com/hongj77/hongj77.github.io
+  repo:              https://github.com/poole/poole
 
 
 gems:
