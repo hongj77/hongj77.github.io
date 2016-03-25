@@ -2,10 +2,11 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink: ':title'
+highlighter: pygments
 
 # Setup
 title:               Hong Jeon
-tagline:             'Short Blogs'
+tagline:             'thoughts &or; programming'
 description:         ""
 url:                 http://hongjeon.com
 baseurl:             ""

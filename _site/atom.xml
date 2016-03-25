@@ -4,7 +4,7 @@
  <title>Hong Jeon</title>
  <link href="http://hongjeon.com/atom.xml" rel="self"/>
  <link href="http://hongjeon.com/"/>
- <updated>2016-03-24T03:03:15-04:00</updated>
+ <updated>2016-03-25T19:31:01-04:00</updated>
  <id>http://hongjeon.com</id>
  <author>
    <name>Mark Otto</name>
@@ -13,12 +13,74 @@
 
  
  <entry>
+   <title>How to win a free drone.</title>
+   <link href="http://hongjeon.com/how-to-win-a-free-drone"/>
+   <updated>2016-03-25T00:00:00-04:00</updated>
+   <id>http://hongjeon.com/how-to-win-a-free-drone</id>
+   <content type="html">&lt;p&gt;There are a few key advantages that come with going to an engineering school with a strong reputation:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;s&gt;Tons and tons of work.&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;s&gt;Each semester costs more than $25,000.&lt;/s&gt;
+  &lt;/li&gt;
+  &lt;li&gt;???&lt;/li&gt;
+  &lt;li&gt;Okay, these weren’t really advantages.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Joking aside, there are actually a few perks that all (CS) students have access to here at Cornell: tech companies recruit really, really hard. Around the beginning of each semester, companies come and throw events, give talks, and hold competitions in the hopes of becoming at least marginally more noticeable in the absolute &lt;em&gt;chaos&lt;/em&gt; that is career fair. Have you ever tried to pass out 30 resumes in 3 hours? Exactly.&lt;/p&gt;
+
+&lt;p&gt;In those two weeks, however, you feel like a king. Not many days when someone actually wants to hear about that project you did that one time using Dockers and ECS. Let’s not forget about the free food and swag. Last weekend, I happened to go to a talk by &lt;a href=&quot;https://gigster.com/&quot;&gt;Gigster&lt;/a&gt;, and they had a machine learning workshop, which aimed to cover &lt;a href=&quot;http://scikit-learn.org/stable/&quot;&gt;scikit&lt;/a&gt;, &lt;a href=&quot;http://pandas.pydata.org/&quot;&gt;pandas&lt;/a&gt;, and &lt;a href=&quot;http://jupyter.org/&quot;&gt;jupyter&lt;/a&gt; (really cool stuff btw). To jumpstart their recruiting efforts, they had a weekend long machine learning competition, which I assume was to select the best and the brightest candidates at Cornell by looking at who won the ML challenge. Too bad I won by accident.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+    &lt;a href=&quot;http://dilbert.com/strip/2008-05-07&quot; title=&quot;Dilbert Cartoon strip&quot; target=&quot;_blank&quot;&gt;
+    
+        &lt;img src=&quot;/public/post_img/dilbert1.png&quot; alt=&quot;Dilbert Cartoon strip&quot; /&gt;
+    
+    &lt;/a&gt;
+    
+    
+&lt;/div&gt;
+
+&lt;p&gt;You can check out the competition &lt;a href=&quot;https://inclass.kaggle.com/c/gigster-ml&quot;&gt;here&lt;/a&gt;. The task was to predict the opening weekend revenues of major films released in 2008 and 2009, and the evaluation metric was Mean Absolute Error of all your predictions.&lt;/p&gt;
+
+&lt;p&gt;I’m going to preface this by saying I really like the data science stuff. When I was first learning ML (CS 4780), I wrote my own &lt;a href=&quot;https://github.com/hongj77/coding-practice/tree/master/codingchallenges/naive_bayes&quot;&gt;NB regressor&lt;/a&gt; to a SquareSpace coding challenge because I thought it was cool. I ended up getting rejected the next morning because apparently I had no idea what I was doing.. But with time, I naturally got more exposure to ML through taking natural language processing, computer vision, and joining a deep learning research lab.&lt;/p&gt;
+
+&lt;p&gt;So at this point, I knew enough to be able to have fun with the contest. I thought I would submit one or two different models to see how well they do, but I ended up getting completely absored and ended up submitting 37 different solutions. Suddenly, I realized I had no idea what I was doing and just decided to &lt;s&gt;yolo&lt;/s&gt; average the result of 2000 different solutions using a random forest.&lt;/p&gt;
+
+&lt;p&gt;Besides the few lines for for cross validation and custom evaluation metrics, my entire code at the end of the night boiled down to these 3 lines:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c&quot;&gt;# random forest&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.ensemble&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestRegressor&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestRegressor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_estimators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;y_hat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatten&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Next day, my random forest climbed to #1 and the contest ended. And just like that, I had robbed Gigster of a drone with a camera, a BB-8 toy, and a recruiting opportunity. The guy who won second place apparently was a guy from my research lab (aka he is actually competent). He approached me and asked what I used to jump the rankings, and all I could say was…. random forest.&lt;/p&gt;
+
+&lt;!-- _includes/image.html --&gt;
+&lt;div class=&quot;image-wrapper&quot;&gt;
+    
+        &lt;img src=&quot;/public/post_img/drone.JPG&quot; alt=&quot;Drone and BB-8 prize&quot; /&gt;
+    
+    
+&lt;/div&gt;
+
+&lt;p&gt;&lt;b&gt;Lesson learned here:&lt;/b&gt; machine learning is fickle, I still don’t know machine learning, when in doubt average a bunch of wrong solutions together to get the right solution.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>What's a blog?</title>
    <link href="http://hongjeon.com/whats-blog"/>
    <updated>2016-03-22T00:00:00-04:00</updated>
    <id>http://hongjeon.com/whats-blog</id>
    <content type="html">&lt;blockquote&gt;
-  &lt;p&gt;“I think we’ll always look back at our writing and think it was bad, because it’s a pretty much a reflection of our thoughts, which get more complex with experience” - Jeffrey Terry&lt;/p&gt;
+  &lt;p&gt;“I think we’ll always look back at our writing and think it was bad, because it’s a pretty much a reflection of our thoughts, which get more complex with experience” - &lt;a href=&quot;http://jeffterry.org/&quot;&gt;Jeffrey Terry&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Most of the time, it seems that brilliant realizations come to me only at 3:00AM. As I sit in my college apartment, regretting the time I’ve spent putting together this website, the clock reads 3:17, and I’m starting to question if all ideas naturally seem like great ideas at this hour..&lt;/p&gt;

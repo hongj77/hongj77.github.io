@@ -4,7 +4,7 @@ title: What's a blog?
 comments: true
 ---
 
-> "I think we'll always look back at our writing and think it was bad, because it's a pretty much a reflection of our thoughts, which get more complex with experience" - Jeffrey Terry
+> "I think we'll always look back at our writing and think it was bad, because it's a pretty much a reflection of our thoughts, which get more complex with experience" - [Jeffrey Terry](http://jeffterry.org/)
 
 
 Most of the time, it seems that brilliant realizations come to me only at 3:00AM. As I sit in my college apartment, regretting the time I've spent putting together this website, the clock reads 3:17, and I'm starting to question if all ideas naturally seem like great ideas at this hour..
