@@ -22,9 +22,9 @@ In those two weeks, however, you feel like a king. Not many days when someone ac
 
 You can check out the competition [here](https://inclass.kaggle.com/c/gigster-ml). The task was to predict the opening weekend revenues of major films released in 2008 and 2009, and the evaluation metric was Mean Absolute Error of all your predictions.
 
-I'm going to preface this by saying I really like the data science stuff. When I was first learning ML (CS 4780), I wrote my own [NB regressor](https://github.com/hongj77/coding-practice/tree/master/codingchallenges/naive_bayes) to a SquareSpace coding challenge because I thought it was cool. I ended up getting rejected the next morning because apparently I had no idea what I was doing.. But with time, I naturally got more exposure to ML through taking natural language processing, computer vision, and joining a deep learning research lab.
+I'm going to preface this by saying I really like the data science stuff. When I was first learning ML (CS 4780), I wrote my own [gaussian NB classifier](https://github.com/hongj77/coding-practice/tree/master/codingchallenges/naive_bayes) to a SquareSpace coding challenge because I thought it was cool. I got rejected the next morning because apparently I had no idea what I was doing.. But with time, I naturally got more exposure to ML through taking natural language processing, computer vision, and joining a deep learning research lab.
 
-So at this point, I knew enough to be able to have fun with the contest. I thought I would submit one or two different models to see how well they do, but I ended up getting completely absored and ended up submitting 37 different solutions. Suddenly, I realized I had no idea what I was doing and just decided to <s>yolo</s> average the result of 2000 different solutions using a random forest.
+So at this point, I knew enough to be able to have fun with the contest. I thought I would submit one or two different models to see how well they do, but I got completely absored and ended up submitting 35 different solutions. Suddenly, I realized I had no idea what I was doing and just decided to <s>yolo</s> average the result of 2000 different solutions using a random forest.
 
 Besides the few lines for for cross validation and custom evaluation metrics, my entire code at the end of the night boiled down to these 3 lines:
 {% highlight python %}
@@ -34,7 +34,9 @@ model = RandomForestRegressor(n_estimators=2000, max_depth=4)
 y_hat = model.fit(X_train, y_train.values.flatten()).predict(X_test)
 {% endhighlight %}
 
-Next day, my random forest climbed to #1 and the contest ended. And just like that, I had robbed Gigster of a drone with a camera, a BB-8 toy, and a recruiting opportunity. The guy who won second place apparently was a guy from my research lab (aka he is actually competent). He approached me and asked what I used to jump the rankings, and all I could say was.... random forest. 
+Next day, my random forest climbed to #1 and the contest ended. 
+
+..And just like that, I had robbed Gigster of a drone, a BB-8 toy, and a recruiting opportunity. The guy who won second place apparently was a guy from my research lab (aka he is actually competent). He approached me and asked what I used to jump the rankings, and all I could say was.... random forest. 
 
 {% include image.html
             img="public/post_img/drone.JPG"

@@ -4,7 +4,7 @@
  <title>Hong Jeon</title>
  <link href="http://hongjeon.com/atom.xml" rel="self"/>
  <link href="http://hongjeon.com/"/>
- <updated>2016-03-25T19:31:01-04:00</updated>
+ <updated>2016-03-26T01:01:31-04:00</updated>
  <id>http://hongjeon.com</id>
  <author>
    <name>Mark Otto</name>
@@ -48,9 +48,9 @@
 
 &lt;p&gt;You can check out the competition &lt;a href=&quot;https://inclass.kaggle.com/c/gigster-ml&quot;&gt;here&lt;/a&gt;. The task was to predict the opening weekend revenues of major films released in 2008 and 2009, and the evaluation metric was Mean Absolute Error of all your predictions.&lt;/p&gt;
 
-&lt;p&gt;I’m going to preface this by saying I really like the data science stuff. When I was first learning ML (CS 4780), I wrote my own &lt;a href=&quot;https://github.com/hongj77/coding-practice/tree/master/codingchallenges/naive_bayes&quot;&gt;NB regressor&lt;/a&gt; to a SquareSpace coding challenge because I thought it was cool. I ended up getting rejected the next morning because apparently I had no idea what I was doing.. But with time, I naturally got more exposure to ML through taking natural language processing, computer vision, and joining a deep learning research lab.&lt;/p&gt;
+&lt;p&gt;I’m going to preface this by saying I really like the data science stuff. When I was first learning ML (CS 4780), I wrote my own &lt;a href=&quot;https://github.com/hongj77/coding-practice/tree/master/codingchallenges/naive_bayes&quot;&gt;gaussian NB classifier&lt;/a&gt; to a SquareSpace coding challenge because I thought it was cool. I got rejected the next morning because apparently I had no idea what I was doing.. But with time, I naturally got more exposure to ML through taking natural language processing, computer vision, and joining a deep learning research lab.&lt;/p&gt;
 
-&lt;p&gt;So at this point, I knew enough to be able to have fun with the contest. I thought I would submit one or two different models to see how well they do, but I ended up getting completely absored and ended up submitting 37 different solutions. Suddenly, I realized I had no idea what I was doing and just decided to &lt;s&gt;yolo&lt;/s&gt; average the result of 2000 different solutions using a random forest.&lt;/p&gt;
+&lt;p&gt;So at this point, I knew enough to be able to have fun with the contest. I thought I would submit one or two different models to see how well they do, but I got completely absored and ended up submitting 35 different solutions. Suddenly, I realized I had no idea what I was doing and just decided to &lt;s&gt;yolo&lt;/s&gt; average the result of 2000 different solutions using a random forest.&lt;/p&gt;
 
 &lt;p&gt;Besides the few lines for for cross validation and custom evaluation metrics, my entire code at the end of the night boiled down to these 3 lines:&lt;/p&gt;
 
@@ -59,7 +59,9 @@
 &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;RandomForestRegressor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_estimators&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_depth&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;y_hat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;flatten&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Next day, my random forest climbed to #1 and the contest ended. And just like that, I had robbed Gigster of a drone with a camera, a BB-8 toy, and a recruiting opportunity. The guy who won second place apparently was a guy from my research lab (aka he is actually competent). He approached me and asked what I used to jump the rankings, and all I could say was…. random forest.&lt;/p&gt;
+&lt;p&gt;Next day, my random forest climbed to #1 and the contest ended.&lt;/p&gt;
+
+&lt;p&gt;..And just like that, I had robbed Gigster of a drone, a BB-8 toy, and a recruiting opportunity. The guy who won second place apparently was a guy from my research lab (aka he is actually competent). He approached me and asked what I used to jump the rankings, and all I could say was…. random forest.&lt;/p&gt;
 
 &lt;!-- _includes/image.html --&gt;
 &lt;div class=&quot;image-wrapper&quot;&gt;
