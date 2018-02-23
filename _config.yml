@@ -6,7 +6,7 @@ highlighter: pygments
 
 # Setup
 title:               Hong Jeon
-tagline:             'thoughts &or; programming'
+tagline:             'Short snippets about life'
 description:         ""
 url:                 http://hongjeon.com
 baseurl:             ""
